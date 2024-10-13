@@ -1,0 +1,117 @@
+<!-- <p>user profile works!</p>
+<h4>Name: {{name.toUpperCase()}},  Age: {{age}}, Location: {{place}}</h4>
+
+<button title="disabled" [disabled]="isBtnDisabled">Click Me</button>
+
+<input type="text" (input)="onChange()"> -->
+
+<div class="table-container">
+        <div class="table-header">
+            <h3>Tasks</h3>
+            <p>All Tasks</p>
+            <p>4 records</p>
+        </div>
+        <div class="task-controls">
+            <button class="btn new-task">New Task</button>
+            <button class="btn refresh">Refresh</button>
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Assigned To</th>
+                    <th>Status</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#">User 1</a></td>
+                    <td>Completed</td>
+                    <td>12/10/2024</td>
+                    <td>Low</td>
+                    <td>This task is good</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">▼</button>
+                            <div class="dropdown-content">
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#">User 2</a></td>
+                    <td>In Progress</td>
+                    <td>14/09/2024</td>
+                    <td>High</td>
+                    <td>This task is good</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">▼</button>
+                            <div class="dropdown-content">
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#">User 3</a></td>
+                    <td>Not Started</td>
+                    <td>18/08/2024</td>
+                    <td>Low</td>
+                    <td>This task is good</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">▼</button>
+                            <div class="dropdown-content">
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="#">User 4</a></td>
+                    <td>In Progress</td>
+                    <td>12/06/2024</td>
+                    <td>Normal</td>
+                    <td>This task is good</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">▼</button>
+                            <div class="dropdown-content">
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <div class="rows-per-page">
+                <label for="rows">20</label>
+                <input id="rows" type="number" value="20" min="10">
+            </div>
+            <div class="pagination-controls">
+                <button>First</button>
+                <button>Prev</button>
+                <button>1</button>
+                <button>Next</button>
+                <button>Last</button>
+            </div>
+        </div>
+    </div>

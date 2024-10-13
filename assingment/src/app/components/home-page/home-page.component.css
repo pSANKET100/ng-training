@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.header {
+    background-color: #e91e63;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-primary {
+    background-color: #ffd54f;
+    color: #333;
+}
+.btn-secondary {
+    background-color: #f5f5f5;
+    color: #333;
+}
+.search-container {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.search-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+.status-completed {
+    color: green;
+}
+.status-in-progress {
+    color: orange;
+}
+.status-not-started {
+    color: red;
+}
+.priority-high {
+    font-weight: bold;
+    color: #e91e63;
+}
+.priority-normal {
+    color: #2196f3;
+}
+.priority-low {
+    color: #4caf50;
+}
+.actions {
+    position: relative;
+}
+.actions-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none;
+}
+.actions-menu button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.actions-menu button:hover {
+    background-color: #f5f5f5;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+.pagination select {
+    padding: 5px;
+}
+.pagination-buttons {
+    display: flex;
+    gap: 5px;
+}
+.pagination-buttons button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+}
+.pagination-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

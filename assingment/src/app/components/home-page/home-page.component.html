@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Interface</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">To-Do Application</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Tasks</h1>
+            <div class="header-buttons">
+                <button class="btn btn-primary">New Task</button>
+                <button class="btn btn-secondary">Refresh</button>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-input">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Assigned To</th>
+                    <th>Status</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <th>Comments</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>User 1</td>
+                    <td class="status-completed">Completed</td>
+                    <td>12/10/2024</td>
+                    <td class="priority-low">Low</td>
+                    <td>This task is good</td>
+                    <td class="actions">
+                        <button onclick="toggleMenu(this)">...</button>
+                        <div class="actions-menu">
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>User 2</td>
+                    <td class="status-in-progress">In Progress</td>
+                    <td>14/09/2024</td>
+                    <td class="priority-high">High</td>
+                    <td>This</td>
+                    <td class="actions">
+                        <button onclick="toggleMenu(this)">...</button>
+                        <div class="actions-menu">
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>User 3</td>
+                    <td class="status-not-started">Not Started</td>
+                    <td>18/08/2024</td>
+                    <td class="priority-low">Low</td>
+                    <td>This</td>
+                    <td class="actions">
+                        <button onclick="toggleMenu(this)">...</button>
+                        <div class="actions-menu">
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>User 4</td>
+                    <td class="status-in-progress">In Progress</td>
+                    <td>12/06/2024</td>
+                    <td class="priority-normal">Normal</td>
+                    <td>This task is good</td>
+                    <td class="actions">
+                        <button onclick="toggleMenu(this)">...</button>
+                        <div class="actions-menu">
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <div>
+                <select>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+            <div class="pagination-buttons">
+                <button disabled>First</button>
+                <button disabled>Prev</button>
+                <button>1</button>
+                <button>Next</button>
+                <button>Last</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(button) {
+            const menu = button.nextElementSibling;
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

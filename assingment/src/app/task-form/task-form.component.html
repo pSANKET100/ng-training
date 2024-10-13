@@ -1,0 +1,32 @@
+<!-- src/app/task-form/task-form.component.html -->
+<!-- <form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="slds-form"> -->
+    <div class="slds-form-element">
+      <label class="slds-form-element__label" for="title">Title</label>
+      <div class="slds-form-element__control">
+        <input type="text" id="title" formControlName="title" class="slds-input" />
+      </div>
+    </div>
+    <div class="slds-form-element">
+      <label class="slds-form-element__label" for="description">Description</label>
+      <div class="slds-form-element__control">
+        <textarea id="description" formControlName="description" class="slds-textarea"></textarea>
+      </div>
+    </div>
+    <div class="slds-form-element">
+      <label class="slds-form-element__label" for="status">Status</label>
+      <div class="slds-form-element__control">
+        <select id="status" formControlName="status" class="slds-select">
+          <option value="Not Started">Not Started</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="slds-button slds-button_brand">
+      {{editMode ? 'Update' : 'Add'}} Task
+    </button>
+    <button type="button" class="slds-button slds-button_neutral" (click)="resetForm()">
+      Cancel
+    </button>
+  <!-- </form> -->
+  
