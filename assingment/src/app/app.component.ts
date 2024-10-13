@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { UserProfileComponent } from './components/user-profile/user-profile.component';
-import { HomePageComponent } from './components/home-page/home-page.component';
+import { CommonModule } from '@angular/common';
 import { TaskListComponent } from './task-list/task-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserProfileComponent, HomePageComponent, TaskListComponent],
-  templateUrl: './app.component.html',
-  // template:'<h2>hi</h2>',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, TaskListComponent],
+  template: `
+    <div class="container">
+      <app-task-list></app-task-list>
+    </div>
+  `,
+  styles: [`
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  `]
 })
-export class AppComponent {
-  title = 'todo';
-}
+export class AppComponent {}
